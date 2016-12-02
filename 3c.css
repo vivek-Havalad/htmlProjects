@@ -11,3 +11,22 @@ padding-bottom: 30px;
 div.dro{
   padding: 25px;
 }
+#submit
+{
+  display: block;
+margin-left: 100px;
+margin-bottom: 25px;
+}
+span{
+position: absolute;
+left:539px;
+
+}
+input[name="sub"]
+{
+  margin-left: 25px;
+}
+input[name="reset"]
+{
+  margin-left:10px;
+}
