@@ -3,8 +3,8 @@ function myfun()
   var num1=document.forms["cal"]["fir"].value;
   var num2=document.forms["cal"]["sec"].value;;
   var choice= document.forms["cal"]["option"].value;
-var num1=parseInt(num1);
-var num2=parseInt(num2);
+var num1=parseFloat(num1);
+var num2=parseFloat(num2);
   var result=0.0;
   switch (choice) {
     case "add":result=num1+num2;
