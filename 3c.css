@@ -22,11 +22,11 @@ position: absolute;
 left:539px;
 
 }
-input[name="sub"]
+input[ name = "sub" ]
 {
   margin-left: 25px;
 }
-input[name="reset"]
+input [ name = "reset" ]
 {
   margin-left:10px;
 }

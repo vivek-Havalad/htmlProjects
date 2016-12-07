@@ -1,0 +1,10 @@
+/*to display student info using style sheet*/
+h1{
+  text-align: center;
+  color: red;
+}
+div{
+  text-align: center;
+  color: blue;
+  font-size: 30px;
+}

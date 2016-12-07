@@ -1,0 +1,41 @@
+<!--method chaining
+6-12-2016
+Author:vivek.H
+time:8:52 AM
+-->
+
+<html>
+<head>
+<title>
+Calculation Object
+</title>
+</head>
+<body>
+  <script>
+function calculation()
+{
+
+    var first=function(ins)
+    {
+      return second(ins+1,ins);
+    }
+     var second =function(ins,ins2)
+     {
+       return sum(ins+ins2);
+     }
+     var sum=function(tot){
+     return tot;
+}
+var ins=document.forms["cals"]["vals"].value;
+var x=parseInt(ins);
+document.getElementById("result").innerHTML=first(x);
+  }
+
+  </script>
+  <form name="cals">
+  enter a value:  <input type="number" name="vals" />
+    <input type="button" onclick="calculation()" value="submit" />
+  </form>
+  <p>The chained value is:<span id="result"></span> </p>
+</body>
+</html>

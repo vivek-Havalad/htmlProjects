@@ -1,0 +1,17 @@
+p {
+  display:inline;
+  padding: 2%;
+margin-bottom: 10px;
+
+}
+span
+{
+  /*position: relative;*/
+  margin-left: 10%;                       
+}
+div.news
+{
+box-sizing: border-box;
+width:50%;
+ border: solid blue;
+}

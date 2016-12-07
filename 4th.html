@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<title>next day</title>
+</head>
+<body onload="nextday();Date.getNextday()">
+<script>
+function nextday()
+{
+  var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var cday=new Date();
+  var cd=days[cday.getDay()];
+ document.getElementById("curr").innerHTML=cd;
+
+
+  Date.prototype.getNextday = function () {
+cday.setDate(cday.getDate()+1);
+return days[cday.getDay()];
+
+  };
+  document.getElementById("next").innerHTML=cday.getNextday();
+}
+</script>
+current date:<p id="curr">
+
+</p>
+next date:<p id="next"></p>
+</body>
+</html>

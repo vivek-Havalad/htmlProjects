@@ -1,0 +1,47 @@
+<!--
+Author:vivek Havalad
+day:5th dec 2016
+time:6:43pm-->
+<html>
+
+<head>
+
+<title> java script apply</title>
+</head>
+<body>
+<script>
+function clen()
+{
+location.reload();
+}
+function prifx()
+{
+  var c=document.forms["texts"]["ins"].value;
+  var p=function (deflt)
+  {
+    return function(c)
+    {
+      return deflt+" "+c;
+    };
+  };
+  var t=p("BridgeLabz");
+  document.getElementById("outs").innerHTML=" ";
+  document.getElementById("outs").innerHTML=t(c);
+
+}
+
+</script>
+<form name="texts">
+<p>
+enter a text:<input type="text" name="ins" />
+</p>
+<input type="button" value="submit" onclick="prifx()" />
+<input type="button" value="clear" onclick="clen()" />
+
+</form>
+
+prifix element is:<p id="outs">
+
+</p>
+</body>
+</html>

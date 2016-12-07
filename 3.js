@@ -1,7 +1,7 @@
 function myfun()
 {
   var num1=document.forms["cal"]["fir"].value;
-  var num2=document.forms["cal"]["sec"].value;;
+  var num2=document.forms["cal"]["sec"].value;
   var choice= document.forms["cal"]["option"].value;
 var num1=parseFloat(num1);
 var num2=parseFloat(num2);
