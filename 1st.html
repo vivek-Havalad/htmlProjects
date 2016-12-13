@@ -4,18 +4,25 @@
 <head>
 <title style="color:blue;">hiihih</title>
 <script>
-function tim()
-{
-document.getElementById("demo").innerHTML=Date();
+function mylist(){
+   list=[];
 }
+mylist.prototype.tim = function () {
+
+list[0]="new";
+document.getElementById("demo").innerHTML=list[0];
+};
+
+
 </script>
-<meta http-equiv="refresh" content="1">
+
 </head>
 
-<body onload="tim()">
+<body onload="mylist()">
+  <input type="text" name=" hi">
   <p id="demo"></p>
 
-
+<input type="submit" name="ok" value="ok" onclick="new mylist().tim()">
 </body>
 
 
