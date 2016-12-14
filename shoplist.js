@@ -9,6 +9,7 @@ MyList.prototype.ItemName = function () {
   this.ItemSize(pk);
 };
 MyList.prototype.ItemSize = function (name) {
+//create a local variable else if global used overwrites old data in myist
   var list=[];
   list[0]=name;
   list[1]=document.forms["shoppinglist"]["ItemSize"].value;

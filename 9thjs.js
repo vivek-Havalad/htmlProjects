@@ -1,10 +1,11 @@
 function openFile()
-{
+{//trigger the event on change of file object
   document.getElementById('file').onchange=function()
   {
     var file=this.files[0];
 
      var reader=new FileReader();
+     //to trigger progressEvent use onload
      reader.onload = function(progressEvent){
        console.log("hi");var count=0;
        var lines=this.result.split('\n');
