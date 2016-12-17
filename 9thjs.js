@@ -1,3 +1,4 @@
+//file reading process from link docs html
 function openFile()
 {//trigger the event on change of file object
   document.getElementById('file').onchange=function()

@@ -1,3 +1,4 @@
+//reading file example for exprement
 function openFile(){
 document.getElementById('file').onchange = function(){
 

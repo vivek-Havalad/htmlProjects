@@ -1,0 +1,25 @@
+<!--Author:vivek H
+time:10:56 am
+date:15-12-2016
+content:reading file path from url and providing linked list operation-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FilesLiskedList</title>
+    <script src="FilesLinkedList.js"></script>
+    <link rel="stylesheet" href="FilesLinkedList.css">
+  </head>
+  <body onload="openFile()">
+Enter the file to be considered:<input type="file" id="file">
+<input type="button" onclick="openFile()" value="load">
+Enter the value to be inserted<input type="text" name="value" />
+<button name="add" >add text to the file</button>
+Enter the pos:<input type="text" name="pos">
+<button name="remove" >remove element</button>
+<button type="button" name="search">Search Value</button>
+<button type="button" name="display">Display</button>
+<p id="result"></p>
+<p id="fileContent"></p>
+  </body>
+</html>
