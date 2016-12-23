@@ -1,7 +1,10 @@
+//create an object
 var Vehicle=function(){
+  //declare Public attributes
   Max_Speed=0;
     Type="";
     Displacement=0;
+    //Drfine Public methods
   this.SetSpeed=function (speed) {
     Max_Speed=speed;
     }
@@ -13,16 +16,19 @@ var Vehicle=function(){
     }
 
 }
+//inherit the parent to child object
 function inheritsFrom (child, parent) {
     child.prototype = Object.create(parent.prototype);
+    //can be used for clone
 }
-
+   //another object
     function Bike(){
       var speeds=Max_Speed;
+      //public method to access private method
      this.a=function () {
       return getSpeed();
      }
-
+//private method
   var getSpeed = function() {
     return speeds;
   }
@@ -30,7 +36,7 @@ function inheritsFrom (child, parent) {
 
 function nowL()
 {
-  //Bike.prototype=new Vehicle();
+  //Bike.prototype=new Vehicle();inhertance can be done by this way also
   inheritsFrom(Bike,Vehicle);
 Bike.prototype.constructor = Bike;
 var ints=document.getElementsByName("Speed")[0].value;

@@ -1,4 +1,12 @@
 input,button{
   display: block;
   margin:6px;
+  border-style: none;
+  background-color: #2196F3;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+input:hover,button:hover{
+  box-shadow: 4px 4px 4px #bfbfbf;
 }

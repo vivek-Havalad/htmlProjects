@@ -158,3 +158,7 @@ list.display();
 
 
 }
+function clea() {
+  location.reload();
+
+}
